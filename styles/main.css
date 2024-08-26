@@ -1,0 +1,131 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: Arial;
+    background-color: #F2EFE7;
+    color: #181818;
+    height: 100%;
+}
+
+::selection {
+    /* background-color: #ff2323; */
+    background-color: #f37521;
+}
+
+#unsel1 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.top {
+    margin: 1em;
+    overflow: auto;
+}
+
+.top div {
+    display: inline-grid;
+}
+
+.top h1 {
+    margin: 0;
+}
+
+.top .top-label {
+    width: 30%;
+}
+
+.top .top-nav {
+    width: 70%;
+    display: inline;
+}
+
+@keyframes button-hover {
+    from {
+        background-color: #F2EFE7;
+        color: #181818;
+    } to {
+        background-color: #181818;
+        color: #F2EFE7;
+    }
+}
+
+.top .top-nav .button {
+    border-inline: 3px dotted #181818;
+    height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    float: right;
+}
+
+.top .top-nav .button :hover {
+    animation-name: button-hover;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+.top .top-nav .button a {
+    text-decoration: none;
+    color: #181818;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.top .top-nav .button + div {
+    border-right: 0;
+    padding-right: 1.1em;
+}
+
+.fpbreak {
+    background-color: #181818;
+    height: 3px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.bottom {
+    margin: 1em;
+}
+
+#hero {
+    width: 100%;
+    aspect-ratio: 5 / 1;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: help;
+}
+
+.footer {
+    margin: 1em;
+}
+
+.footer div {
+    display: inline-grid;
+}
+
+.footer #right {
+    width: 50%;
+}
+
+.footer #left {
+    float: right;
+    display: inline;
+}
