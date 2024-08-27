@@ -1,15 +1,25 @@
+:root {
+    --white: #F2EFE7;
+    --black: #121212;
+    --orange: #f37521;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-family: Arial;
-    background-color: #F2EFE7;
-    color: #181818;
-    height: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    height: 80%;
 }
 
 ::selection {
     /* background-color: #ff2323; */
-    background-color: #f37521;
+    background-color: var(--orange);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 #unsel1 {
@@ -55,16 +65,16 @@ h1 {
 
 @keyframes button-hover {
     from {
-        background-color: #F2EFE7;
-        color: #181818;
+        background-color: var(--white);
+        color: var(--black);
     } to {
-        background-color: #181818;
-        color: #F2EFE7;
+        background-color: var(--black);
+        color: var(--white);
     }
 }
 
 .top .top-nav .button {
-    border-inline: 3px dotted #181818;
+    border-inline: 3px dotted var(--black);
     height: 100%;
     padding-left: 1em;
     padding-right: 1em;
@@ -81,7 +91,7 @@ h1 {
 
 .top .top-nav .button a {
     text-decoration: none;
-    color: #181818;
+    color: var(--black);
     font-weight: bold;
     font-size: 2em;
 }
@@ -91,8 +101,12 @@ h1 {
     padding-right: 1.1em;
 }
 
+.bg-orange {
+    background-color: var(--orange);
+}
+
 .fpbreak {
-    background-color: #181818;
+    background-color: var(--black);
     height: 3px;
     margin-left: 1em;
     margin-right: 1em;
@@ -111,6 +125,7 @@ h1 {
     -webkit-user-select: none;
     -ms-user-select: none;
     cursor: help;
+    filter: invert(0);
 }
 
 .footer {
